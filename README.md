@@ -1,12 +1,54 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to fetch and display current weather information for a city using the OpenWeatherMap API.
 
-Currently, two official plugins are available:
+## 🔧 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Enter a city name and get the current weather
+- Displays temperature, weather description, and city name
+- Uses OpenWeatherMap API
+- Built with React and fetch API
 
-## Expanding the ESLint configuration
+## 🚀 Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Optional: Add a link to your live site if hosted on Netlify, Vercel, or GitHub Pages]
+
+## 🖥️ Screenshot
+
+![Weather App Screenshot] ![ui looks](image.png)
+
+## 📦 Installation
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+    npm install
+    npm start
+
+🔑 API Key
+This app uses the OpenWeatherMap API.
+    You need to sign up at openweathermap.org and get your free API key.
+    Replace the placeholder API key in App.js:
+
+    const response = await fetch(
+  `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=YOUR_API_KEY&units=metric`
+);
+
+📁 Project Structure
+    weather-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md
+
+🧑‍💻 Built With
+React
+
+JavaScript (Fetch API)
+
+OpenWeatherMap API
