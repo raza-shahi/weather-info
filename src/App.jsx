@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
+
 function App() {
   const [cityName, setCityName] = useState('');
   const [report, setReport] = useState(null);
@@ -11,7 +13,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=dffb8bef6d5f381fbbb72aadaab38687&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
       );
       const data = await response.json();
       console.log(data);
