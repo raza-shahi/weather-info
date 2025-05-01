@@ -1,0 +1,70 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Weather Container */
+.city-name {
+  background: #ffffffcc;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+}
+
+.city-name h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+#city {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Button */
+.button-container {
+  padding: 12px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container:hover {
+  background-color: #023e8a;
+}
+
+/* Result Box */
+.result {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #333;
+}
